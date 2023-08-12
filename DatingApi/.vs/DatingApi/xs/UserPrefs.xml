@@ -1,0 +1,50 @@
+﻿<Properties StartupConfiguration="{0C6ABB4F-DE74-4F91-A794-E0F64A375ADF}|API">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.DatingApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DatingApi/Data/MessageRepository.cs">
+    <Files>
+      <File FileName="DatingApi/Extentions/IdentityServiceExtintions.cs" />
+      <File FileName="DatingApi/Extentions/ApplicationServiceExtentions.cs" />
+      <File FileName="DatingApi/SignalR/PresenceTracker.cs" />
+      <File FileName="DatingApi/SignalR/PresenceHub.cs" />
+      <File FileName="DatingApi/SignalR/MessageHub.cs" />
+      <File FileName="DatingApi/Program.cs" />
+      <File FileName="DatingApi/Data/Group.cs" />
+      <File FileName="DatingApi/Data/Connection.cs" />
+      <File FileName="DatingApi/Interface/IMessageRepository.cs" />
+      <File FileName="DatingApi/Interface/ILikesRepository.cs" />
+      <File FileName="DatingApi/Data/DataContext.cs" />
+      <File FileName="DatingApi/Data/MessageRepository.cs" Line="93" Column="1" />
+      <File FileName="DatingApi/Helper/MessageParams.cs" />
+      <File FileName="DatingApi/Migrations/20230320110017_MyFirstMigration.cs" />
+      <File FileName="DatingApi/Migrations/20230513160853_Group.cs" />
+      <File FileName="DatingApi/Data/PhotoService.cs" />
+      <File FileName="DatingApi/Controllers/MessagesController.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DatingApi" expanded="True">
+            <Node name="DatingApi" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True">
+                <Node name="MessageRepository.cs" selected="True" />
+              </Node>
+              <Node name="Extentions" expanded="True" />
+              <Node name="Helper" expanded="True" />
+              <Node name="Interface" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="SignalR" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

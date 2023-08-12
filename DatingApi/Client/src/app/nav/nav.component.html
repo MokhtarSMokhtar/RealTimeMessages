@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-md navbar-dark flex-top bg-primary">
+ <div class="container">
+    <a class="navbar-brand"  routerLinkActive="active" routerLink="/home">Dating</a>
+      <ng-container *ngIf="accountService.currentUser$|async">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0 " >
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/members" routerLinkActive="active">Matches <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/lists" routerLinkActive="active">Lists</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " routerLink="/messages" routerLinkActive="active">Messages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " routerLink="/error" routerLinkActive="active">Test Error</a>
+          </li>
+          <li class="nav-item" *appHasRole="['Admin','Modeator']">
+            <a class="nav-link " routerLink="/admin" routerLinkActive="active">Admin</a>
+          </li>
+        </ul>  
+      </ng-container>
+
+      <div class="dropdown"*ngIf="(accountService.currentUser$|async) as user" dropdown>
+        <a class="dropdown-toggle text-light text-decoration-none ms-2" dropdownToggle>Welcome {{user.userName}}</a>
+        <img src="{{user.phtotUrl || './assets/user.png'}}" alt="user photo">
+        <div class="dropdown-menu" *dropdownMenu>
+            <a  class="dropdown-item" routerLink="member/edit">Edite Profile</a>
+            <a  class="dropdown-item" (click)="logout()">logout</a>
+        </div>
+      </div>
+      <form *ngIf="!(accountService.currentUser$|async)"  #loginForm="ngForm" class="d-flex" (ngSubmit)="login()" autocomplete="off">
+        <input
+        [(ngModel)]="model.username"
+        type="text"
+        name="username" 
+        id="username"
+        placeholder="Username">
+        <input type="password"
+        [(ngModel)]="model.password"
+         name="password" 
+         id="username"
+         placeholder="Password">
+        <button type="submit" >Login</button>
+      </form>
+ </div>
+  </nav>

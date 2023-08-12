@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/mokhtar/Desktop/DatingProject/DatingApi/ProductDAL/ProductDAL.csproj": {}
+  },
+  "projects": {
+    "/Users/mokhtar/Desktop/DatingProject/DatingApi/ProductDAL/ProductDAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mokhtar/Desktop/DatingProject/DatingApi/ProductDAL/ProductDAL.csproj",
+        "projectName": "ProductDAL",
+        "projectPath": "/Users/mokhtar/Desktop/DatingProject/DatingApi/ProductDAL/ProductDAL.csproj",
+        "packagesPath": "/Users/mokhtar/.nuget/packages/",
+        "outputPath": "/Users/mokhtar/Desktop/DatingProject/DatingApi/ProductDAL/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mokhtar/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Cosmos": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
